@@ -1,0 +1,61 @@
+GET http://localhost:3000/codex
+
+###
+
+GET http://localhost:3000/codex/5ea4de59cb19b5451d1211de
+
+###
+POST http://localhost:3000/codex/new
+Content-Type: application/json
+
+{"title": "Full Stack Developer","author": "Abi"}
+
+
+
+###
+PUT http://localhost:3000/codex/5ea4f0e110eba14613733ef6
+Content-Type: application/json
+
+{
+    "title":"New Person",
+    "author":"Abi"
+}
+
+
+###
+DELETE   http://localhost:3000/codex/5ea4ed3228b92d45d3f3efdb
+
+
+#####
+
+GET http://localhost:3000/kindle
+
+###
+
+GET http://localhost:3000/kindle/5ea4de59cb19b5451d1211de
+
+###
+POST http://localhost:3000/kindle/new
+Content-Type: application/json
+
+{
+    "title":"Developer",
+    "author":"Abi",
+    "link":"amirza.techlaunch.io"
+}
+
+
+
+###
+PUT  http://localhost:3000/kindle/5ea4f9d771d517474a0767f0
+Content-Type: application/json
+
+{
+    "title":"New Person",
+    "author":"Abi"
+}
+
+
+###
+DELETE   http://localhost:3000/kindle/5ea4f9735171b1473ef0c2cc
+

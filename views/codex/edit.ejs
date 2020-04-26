@@ -1,0 +1,26 @@
+<%- include('../partials/header.ejs') %>
+
+
+
+<h1>edit new codex info </h1>
+
+
+<form action="/codex/<%= codex.id %>?_method=PUT" method="post">
+	<input type="hidden" name="_method" value="PUT">
+	<fieldset>
+		<label for="title">Title:</label>
+		<input id="title" type='text' name='title' placeholder="Enter book title"/>	
+	</fieldset>
+	<fieldset>
+		<label for="author">Author:</label>
+		<input id="author" type='text' name='author' placeholder="Enter the author"/>	
+	</fieldset>
+	<button>Update codex</button>
+</form>
+
+
+
+
+
+
+<%- include('../partials/footer.ejs') %>

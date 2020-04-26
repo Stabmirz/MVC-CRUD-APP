@@ -1,0 +1,30 @@
+<%- include('../partials/header.ejs') %>
+
+<h1>add a new e-book </h1>
+
+
+ <form method="POST" action="/kindle/new">
+	<fieldset>
+		<label for="title">Title:</label>
+		<input id="title" type='text' name='title' placeholder="Enter your favorite book"/>	
+	</fieldset>
+	<fieldset>
+		<label for="author">Author:</label>
+		<input id="author" type='text' name='author' placeholder="Enter the author"/>	
+	</fieldset>
+	<fieldset>
+		<label for="link">Amazon link:</label>
+		<input id="link" type='text' name='link' placeholder="link to kindle purchase site!"/>	
+	</fieldset>
+	<button>Add the e-book</button>
+</form>
+
+
+
+
+
+
+
+
+
+<%- include('../partials/footer.ejs') %>

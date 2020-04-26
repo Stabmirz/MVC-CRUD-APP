@@ -1,0 +1,26 @@
+{
+  "name": "mvc-crud-app",
+  "version": "1.0.0",
+  "description": "npm init to do",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Stabmirz/MVC-CRUD-APP.git"
+  },
+  "author": "Abi",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "mongo": "^0.1.0",
+    "mongoose": "^5.9.10",
+    "startbootstrap-creative": "^6.0.1",
+    "validator": "^13.0.0"
+  }
+}

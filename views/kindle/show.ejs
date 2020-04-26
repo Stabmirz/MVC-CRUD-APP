@@ -1,0 +1,36 @@
+<%- include('../partials/header.ejs') %>
+
+
+
+<h1><%= kindle.title %></h1>
+<br>
+<article>
+This e-book is by <a href='/kindle/<%= kindle.id%>'</a><%= kindle.author%></a>
+
+</article>
+<br>
+  <p><a href="/kindle/<%=kindle.id%>/edit">Change the entry!</a></p>
+<br>
+
+<aside>
+
+<form method="POST" action="/kindle/<%=kindle.id%>?_method=DELETE">
+  <input type="hidden" name="_method" value="DELETE"/>
+    <button>Delete <%= kindle.name %></button>
+
+</form>
+
+
+
+</aside>
+
+
+
+
+
+
+
+
+
+
+<%- include('../partials/footer.ejs') %>

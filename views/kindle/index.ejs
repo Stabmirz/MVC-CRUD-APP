@@ -1,0 +1,27 @@
+<%- include('../partials/header.ejs') %>
+
+
+
+<h1>Index of Kindle books</h1>
+<ul>
+	<%
+		kindle.forEach((kindle)=>{ 
+	%>
+	<li>
+		<a href="/kindle/<%=kindle.id%>"><%=kindle.title%></a> by <%= kindle.author %>
+	</li>
+	<% }) %>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include('../partials/footer.ejs') %>

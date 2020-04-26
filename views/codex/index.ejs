@@ -1,0 +1,27 @@
+<%- include('../partials/header.ejs') %>
+
+
+
+<h1>book collection </h1>
+<ul>
+	<%
+		codex.forEach((codex)=>{ 
+	%>
+	<li>
+		<a href="/codex/<%=codex.id%>"><%=codex.title%></a> by <%= codex.author %>
+	</li>
+	<% }) %>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include('../partials/footer.ejs') %>
